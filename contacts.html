@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Sunrise</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    
+
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+
+    <link href="common-css/bootstrap.css" rel="stylesheet">
+
+    <link href="common-css/ionicons.css" rel="stylesheet">
+
+
+    <link href="single-post-2/css/styles.css" rel="stylesheet">
+
+    <link href="single-post-2/css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="container-fluid position-relative no-side-padding">
+
+        <a href="#" class="logo"><b>happiness</b></a>
+
+        <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+        <ul class="main-menu visible-on-click" id="main-menu">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="blog.html">Articles</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul><!-- main-menu -->
+
+        <div class="src-area">
+            <form action="index.html">
+                <button class="src-btn" type="submit"><i class="ion-ios-search-strong"></i></button>
+                <input class="src-input" type="text" name="q" placeholder="search">
+            </form>
+        </div>
+
+    </div><!-- conatiner -->
+</header>
+
+<div class="slider" style="background-image: url(./images/patrick-hendry-w5sgojgzooi-unsplash.jpg)">
+
+</div><!-- slider -->
+
+<section class="comment-section center-text">
+    <div class="container">
+        <br>
+		<br>
+        <h4><b>Contacts</b></h4>
+        <div class="row">
+
+            <div class="col-lg-2 col-md-0"></div>
+
+            <div class="col-lg-8 col-md-12">
+                <div class="comment-form">
+                    <form method="post" action="thanks.html">
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <input type="text" aria-required="true" name="contact-form-name" class="form-control"
+                                       placeholder="Name" aria-invalid="true" required>
+                            </div><!-- col-sm-6 -->
+                            <div class="col-sm-6">
+                                <input type="email" aria-required="true" name="contact-form-email" class="form-control"
+                                       placeholder="E-mail" aria-invalid="true" required>
+                            </div><!-- col-sm-6 -->
+							<div class="col-sm-12">
+								<input type="text" aria-required="true" name="contact-form-phone" class="form-control"
+									   placeholder="Phone number" aria-invalid="true" required>
+							</div><!-- col-sm-6 -->
+
+                            <div class="col-sm-12">
+									<textarea name="contact-form-message" rows="2" class="text-area-messge form-control"
+                                              placeholder="The text of the comment" aria-required="true"
+                                              aria-invalid="false"></textarea>
+								<label class="terms-field">
+									<input type="checkbox" name="terms" value="check" required=""/>
+									<a href="policy.html" target="_blank">
+										I have read and agree to the terms of the user agreement
+									</a>
+								</label>
+                            </div><!-- col-sm-12 -->
+                            <div class="col-sm-12">
+                                <button class="submit-btn" type="submit" id="form-submit"><b>Send</b></button>
+                            </div><!-- col-sm-12 -->
+
+                        </div><!-- row -->
+                    </form>
+                </div><!-- comment-form -->
+
+            </div><!-- col-lg-8 col-md-12 -->
+
+        </div><!-- row -->
+
+    </div><!-- container -->
+</section>
+
+<footer>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+
+                    <a class="logo" href="#"><b>happiness</b></a>
+                    <p class="copyright">All rights reserved.</p>
+                    <ul class="icons">
+                        <li><a href=""><i class="ion-social-facebook-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-twitter-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-instagram-outline"></i></a></li>
+                    </ul>
+
+                </div><!-- footer-section -->
+            </div><!-- col-lg-4 col-md-6 -->
+
+            <div class="col-md-6">
+                <div class="footer-section">
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="policy.html">Privacy policy</a></li>
+                        <li><a href="terms.html">Terms and conditions</a></li>
+                    </ul>
+                </div><!-- footer-section -->
+            </div><!-- col-lg-4 col-md-6 -->
+
+        </div><!-- row -->
+    </div><!-- container -->
+</footer>
+
+<div class='cookie-banner'>
+    <p>
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">Cookie policy</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+<script>
+    window.onload = function () {
+        $('.close-cookie').click(function () {
+            $('.cookie-banner').fadeOut();
+        })
+    }
+</script>
+<script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+
+<!-- SCIPTS -->
+
+<script src="common-js/jquery-3.1.1.min.js"></script>
+
+<script src="common-js/tether.min.js"></script>
+
+<script src="common-js/bootstrap.js"></script>
+
+<script src="common-js/scripts.js"></script>
+
+</body>
+</html>
